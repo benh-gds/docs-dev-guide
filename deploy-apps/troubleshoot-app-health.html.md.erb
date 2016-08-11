@@ -262,6 +262,10 @@ To enable it for an entire shell session, set the variable first:
 <p class="note"><strong>Note</strong>: <code>CF_TRACE</code> is a local environment variable that modifies the behavior of the cf CLI.
 Do not confuse <code>CF_TRACE</code> with the <a href="#env">variables in the container environment</a> where your apps run.</p>
 
+<p class="note"><strong>Note</strong>: Using the cf CLI with <code>CF_TRACE</code> enabled can potentially display sensitive information.
+Be careful about using this option in a context where other people can see the output.</p>
+
+
 ## <a id='cf-commands'></a>cf Troubleshooting Commands ##
 
 You can investigate app deployment and health using the cf CLI.
